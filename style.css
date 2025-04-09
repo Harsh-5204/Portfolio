@@ -154,6 +154,13 @@ body {
     margin-bottom: 10px;
 }
 
+.profile-ring {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
 .about-img {
     max-width: 100%;
     height: auto;
@@ -343,7 +350,7 @@ p {
     padding: 7% 10%;
     text-align: center;
     background-color: #1a1a1a;
-    border-bottom: 2px solid white;
+    /* border-bottom: 2px solid white; */
 }
 
 .contact-container {
