@@ -539,3 +539,15 @@ p {
         font-size: 1rem;
     }
 }
+::-webkit-scrollbar {
+    width: 0px;
+  }
+
+  /* ::-webkit-scrollbar-thumb {
+    background-color: #161616;  
+    border-radius: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: #161616;
+  } */
