@@ -345,7 +345,7 @@ p {
 
 
 
-
+/* contact */
  #contact {
     padding: 7% 10%;
     text-align: center;
@@ -558,3 +558,9 @@ p {
   ::-webkit-scrollbar-track {
     background: #161616;
   } */
+
+  #role-text {
+    font-weight: bold;
+    color: #00aaff;
+  }
+  
