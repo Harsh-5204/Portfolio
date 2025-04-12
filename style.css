@@ -197,15 +197,28 @@ body {
 
 .profile-ring {
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 270px;
+    height: 270px;
     margin: auto;
+    border: 6px solid #28a745; /* Green ring */
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(40, 167, 69, 0.4);
+    transition: transform 0.3s ease-in-out;
+}
+
+.profile-ring:hover {
+    transform: scale(1.05);
 }
 
 .about-img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 10px;
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
 @media screen and (max-width: 768px) {
@@ -214,6 +227,15 @@ body {
     }
     .about p {
         font-size: 1.1rem;
+    }
+    .profile-ring {
+        width: 220px;
+        height: 220px;
+    }
+
+    .about-img {
+        width: 200px;
+        height: 200px;
     }
 }
 .connect{
