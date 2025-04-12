@@ -197,8 +197,8 @@ body {
 
 .profile-ring {
     position: relative;
-    width: 270px;
-    height: 270px;
+    width: 260px;
+    height: 260px;
     margin: auto;
     border: 6px solid #28a745; /* Green ring */
     border-radius: 50%;
@@ -207,6 +207,7 @@ body {
     align-items: center;
     box-shadow: 0 0 20px rgba(40, 167, 69, 0.4);
     transition: transform 0.3s ease-in-out;
+    /* background-color: white; */
 }
 
 .profile-ring:hover {
@@ -216,7 +217,7 @@ body {
 .about-img {
     width: 250px;
     height: 250px;
-    object-fit: cover;
+    object-fit:fill;
     border-radius: 50%;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
@@ -234,8 +235,8 @@ body {
     }
 
     .about-img {
-        width: 200px;
-        height: 200px;
+        width: 210px;
+        height: 210px;
     }
 }
 .connect{
