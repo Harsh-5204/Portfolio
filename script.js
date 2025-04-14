@@ -61,32 +61,11 @@ function scrollToTop() {
   typeEffect();
 
 
-    const sections = document.querySelectorAll("section");
-    const navLinks = document.querySelectorAll(".nav-link");
-
-    window.addEventListener("scroll", () => {
-        let current = "";
-
-        sections.forEach((section) => {
-            const sectionTop = section.offsetTop - 100;
-            const sectionHeight = section.clientHeight;
-            if (pageYOffset >= sectionTop && pageYOffset < sectionTop + sectionHeight) {
-                current = section.getAttribute("id");
-            }
-        });
-
-        navLinks.forEach((link) => {
-            link.classList.remove("active");
-            if (link.getAttribute("href") === `#${current}`) {
-                link.classList.add("active");
-            }
-        });
+  
+  document.querySelectorAll(".service-box").forEach(box => {
+    box.addEventListener("click", function () {
+      if (window.innerWidth <= 768) {
+        this.classList.toggle("show-info");
+      }
     });
-
-    // For click, Bootstrap already handles it. But if needed:
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
-            navLinks.forEach(l => l.classList.remove('active'));
-            link.classList.add('active');
-        });
-    });
+  });

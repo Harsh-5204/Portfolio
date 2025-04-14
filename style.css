@@ -275,7 +275,9 @@ body {
 }
 
 .service-box img {
-    height: 120px;
+    height: 80px;
+    /* width: 80px; */
+    /* align-items: center; */
 }
 
 .service-box {
@@ -285,13 +287,28 @@ body {
     padding: 30px;
     border-radius: 10px;
     text-align: center;
-    min-height: 300px;
+    min-height: 200px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
     margin-bottom: 30px;
 }
+.service-box p {
+    display: none;
+  
+    font-size: 1rem;
+    /* color: #ddd; */
+    margin-top: 10px;
+    transform: translateY(10px);
+
+    transition: 
+   
+    opacity 0.8s cubic-bezier(0.25, 0.8, 0.25, 1),
+    transform 0.8s cubic-bezier(0.25, 0.8, 0.25, 1),
+    visibility 0s 0.8s; 
+    
+  }
 
 .service-box:hover {
     transform: translateY(-5px);
@@ -313,6 +330,19 @@ h3 {
 p {
     font-size: 1.1rem;
     color: #ddd;
+}
+
+/* Show on hover for desktop */
+@media (hover: hover) and (pointer: fine) {
+  .service-box:hover p {
+    display: block;
+    
+  }
+}
+
+/* Show on click for mobile */
+.service-box.show-info p {
+  display: block;
 }
 
 @media (max-width: 768px) {
