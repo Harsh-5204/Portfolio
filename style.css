@@ -1,4 +1,17 @@
 /* Global Styles */
+
+/* .cursor {
+    width: 30px;
+    height: 30px;
+    border: 2px solid #00f;
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: transform 0.1s ease;
+    z-index: 9999;
+  } */
+  
 body {
     font-family: Arial, sans-serif;
     background-color: #121212;
@@ -212,7 +225,7 @@ body {
     height: 330px;
     margin: auto;
     border: 6px solid #28a745; /* Green ring */
-    border-radius: 50%;
+    /* border-radius: 50%; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -229,8 +242,8 @@ body {
 .about-img {
     width: 320px;
     height: 320px;
-    object-fit:fill;
-    border-radius: 50%;
+    object-fit:inherit;
+    /* border-radius: 50%; */
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
