@@ -14,6 +14,7 @@ function scrollToTop() {
   window.scrollTo({ top: 0, behavior: "smooth" }); // Smooth scroll to top
 }
 
+
 // Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
   // Get all navigation links
