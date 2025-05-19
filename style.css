@@ -84,9 +84,11 @@ body {
     height: 3px;
     background: white;
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: width 0.5s ease;
     bottom: -6px;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 
 }
 
