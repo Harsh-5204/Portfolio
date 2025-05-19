@@ -1,3 +1,5 @@
+
+
 window.onscroll = function () {
   var btn = document.getElementById("scrollTopBtn");
   if (
@@ -32,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 const roleText = document.getElementById("role-text");
-const roles = ["React Developer", "Web Developer"];
+const roles = ["React Developer", "Web Developer", "FrontEnd Developer"];
 let roleIndex = 0;
 let charIndex = 0;
 let typing = true;
