@@ -644,6 +644,27 @@ p {
     color: #007bff;
     margin-right: 5px;
 }
+.education-content {
+    position: relative;
+    padding-left: 30px;
+    padding-bottom: 20px;
+    border-left: 2px solid #0280b4;
+    margin-bottom: 20px;
+}
+.education-content:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+.education-content::before {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: #0280b4;
+    border-radius: 50%;
+    left: -11px;
+    top:0;
+}
 
 /* Responsive */
 @media (max-width: 768px) {
