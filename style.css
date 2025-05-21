@@ -154,6 +154,9 @@ body {
 .btn-download {
     background-color: #007bff;
     color: white;
+    font-weight: 700;
+    
+   
 }
 
 .btn-download:hover {
